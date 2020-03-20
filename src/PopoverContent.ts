@@ -1,4 +1,4 @@
-import {Component, Input, AfterViewInit, ElementRef, ChangeDetectorRef, OnDestroy, ViewChild, EventEmitter, Renderer } from "@angular/core";
+import {Component, Input, AfterViewInit, ElementRef, ChangeDetectorRef, OnDestroy, ViewChild, EventEmitter, Renderer2 } from "@angular/core";
 import {Popover} from "./Popover";
 
 @Component({
@@ -103,7 +103,7 @@ export class PopoverContent implements AfterViewInit, OnDestroy {
 
     constructor(protected element: ElementRef,
                 protected cdr: ChangeDetectorRef,
-                protected renderer: Renderer) {
+                protected renderer: Renderer2) {
     }
 
     // -------------------------------------------------------------------------
